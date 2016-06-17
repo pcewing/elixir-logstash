@@ -15,7 +15,7 @@ iex(1)> ElixirLogstash.log_debug("Hello")
 Make sure to include *:tzdata* in the applications portion of the mix file.
 
 #### Off-topic Notes
-I use the [docker-elk][DockerElk] project to easily deploy a local ELK stack; however, by default it only sets up a TCP input for Logstash. See my fork of that branch for the necessary configuration changes. These include:
+I use the [docker-elk][DockerElk] project to easily deploy a local ELK stack; however, by default it only sets up a TCP input for Logstash. See my fork of that project for the necessary configuration changes. These include:
 
 - Add a UDP input for Logstash in the config.
 - Forward a UDP port for the UDP input in the docker-compose YAML file.
